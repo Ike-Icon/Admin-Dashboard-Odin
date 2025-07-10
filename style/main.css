@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #4a4646de;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sidebar ul li i {
+    margin-right: 10px;
+    align-items: center;`
+    flex-direction: column;
+}
+
+
+
+.header {
+    background-color: #4a4646de;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.content {
+    flex: 1;
+    padding: 0;
+}
+
+.content .header {
+    background-color: #4a4646de;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content .header .user-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .header .welcome-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}

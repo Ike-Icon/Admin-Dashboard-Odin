@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <section class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+
+            <li><i class="fa-solid fa-house"></i><a href="/admin/users">Home</a></li>
+            <li><i class="fa-solid fa-id-card"></i><a href="/admin/settings">Profile</a></li>
+            <li><i class="fa-solid fa-message"></i><a href="/admin/reports">Messages</a></li>
+            <li><i class="fa-solid fa-clock-rotate-left"></i><a href="/admin/history">History</a></li>
+            <li><i class="fa-solid fa-list-check"></i><a href="/admin/tasks">Tasks</a></li>
+            <li><i class="fa-solid fa-users-line"></i><a href="/admin/community">Communities</a></li>
+            <br>
+            <br>
+            <li><i class="fa-solid fa-gear"></i><a href="/admin/logout">Settings</a></li>
+            <li><i class="fa-solid fa-circle-question"></i><a href="/admin/logout">Support</a></li>
+            <li><i class="fa-solid fa-shield-alt"></i><a href="/admin/logout">Privacy</a></li>
+        </ul>
+
+    </section>
+
+    <section class="content">
+        <section class="header">
+            <div class="user-input">
+                <div class="search-bar">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Search...">
+
+                </div>
+                <div class="user-info">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <span>Isaac Asiedu</span>
+
+                </div>
+            </div>
+            <div class="welcome-message">
+                <div class="welcome-content">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <h1>Welcome, Isaac Asiedu</h1>
+                    <p>Manage your application efficiently.</p>
+                </div>
+                <div class="welcome-actions">
+                    <button class="btn">New </button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
+            </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="main-content">
+            <div class="card">
+                <h2>Users</h2>
+                <p>Manage users and their roles.</p>
+                <a href="/admin/users" class="btn">View Users</a>
+
+            </div>
+            <div class="card">
+                <h2>Settings</h2>
+                <p>Configure application settings.</p>
+                <a href="/admin/settings" class="btn">View Settings</a>
+
+            </div>
+            <div class="card">
+                <h2>Recent Activity</h2>
+                <p>No recent activity.</p>
+            </div>
+            <div class="card">
+                <h2>System Status</h2>
+                <p>All systems operational.</p>
+            </div>
+            <div class="card">
+                <h2>New Users</h2>
+                <p>5 new users registered this week.</p>
+            </div>
+            <div class="card">
+                <h2>Pending Tasks</h2>
+                <p>3 tasks are pending review.</p>
+            </div>
+            <div class="activity">
+                <p>No recent activity.</p>
+            </div>
+        </section>
+        <section class="Announcements">
+            <div class="announcement-card">
+                <h2>Announcements</h2>
+                <p>Check back for updates and important announcements.</p>
+
+            </div>
+            <div class="trending-card">
+                <h2>Trending Topics</h2>
+                <p>Stay updated with the latest trends in the community.</p>
+
+            </div>
+        </section>
+    </section>
+
+
+</body>
+
+</html>
