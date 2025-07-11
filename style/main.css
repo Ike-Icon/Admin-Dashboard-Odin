@@ -1,169 +1,322 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: #4a4646de;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100%;
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #dce0e582; */
+  background-image: url("https://images.unsplash.com/photo-1584531979583-18c5c4b25efc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .sidebar {
-    display: flex;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    width: 200px;
-    flex-direction: column;
-    padding-left: 30px;
+  display: flex;
+  background-color: #50417c;
+  color: #fff;
+  padding: 10px;
+  width: 20%;
+  flex-direction: column;
+  padding-left: 30px;
 }
 
 .sidebar ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .sidebar ul li {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    height: 10%;
-    width: 100%;
-    
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12%;
+  width: 100%;
 }
 
 .sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: small;
+}
+.sidebar ul li a:hover {
+  color: #6dacea;
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+  /* transition: 0.3s ease-in; */
 }
 .sidebar ul li i {
-    margin-right: 10px;
-    align-items: center;`
-    flex-direction: column;
+  margin-right: 20px;
+  align-items: center;
+  flex-direction: column;
 }
 
 
 
-/* .header {
-    background-color: #4a4646de;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-
-} */
-
 .content {
-    flex: 1;
-    padding: 0;
+  flex: 1;
+  padding: 0;
 }
 
 .content .header {
-    background-color: #4a4646de;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    /* width: 100%; */
-    padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  padding: 20px;
 }
 
 .content .header .user-input {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .content .header .user-info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    /* justify-content: space-between; */
-    /* width: 100%; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #000;
 }
 
 .content .header .user-info img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .content .header .user-input .search-bar input {
-    /* display: flex;
+  /* display: flex;
     align-items: center; */
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 5px 5px;
-    width: 400px;
+  background-color: #cac4e950;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 5px;
+  width: 400px;
 }
 
 .content .header .user-input .search-bar button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;    
-    color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
 }
 
 .content .header .welcome-message {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px ;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
 }
 .content .header .welcome-message .welcome-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .greeting {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 .greeting h1 {
-    font-size: 20px;
-    margin: 0;
-    color: #fff;
+  font-size: 20px;
+  margin: 0;
+  color: #000;
 }
 .greeting p {
-    font-size:x-small;
-    margin: 0;
-    color: #fff;
-    
+  font-size: x-small;
+  margin: 0;
+  color: #000;
 }
 .content .header .welcome-message img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 .content .header .welcome-message button:hover {
-    background-color: #fff;
-    color: #4164edde;
-    transition: 0.3s ease-in-out;
+  background-color: #50417cbb;
+  color: #000;
+  transition: 0.3s ease-in-out;
 }
 .content .header .welcome-actions {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 10px;
 }
 .content .header .welcome-message button {
-    background-color: #4164edde;
-    color: #fff;
-    border: none;
-    padding: 5px 20px;
-    border-radius: 20px;
-    cursor: pointer;
+  background-color: #594889;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.all-data {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.main-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-gap: 20px;
+  /* gap: 20px; */
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.projects h2 {
+  font-size: 15px;
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(180px, 1fr));
+  grid-template-columns: repeat(2, minmax(50%, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.project-cards .card {
+    background-color: #fff;
+    padding: 0; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    overflow: hidden; 
+}
+
+.project-cards .card .side-color {
+    width: 5px;
+    height: 100%;
+    background-color: #FF9470;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.project-cards .card .card-content{
+    padding: 5px;
+  margin: 5px;
+  
+}
+
+.project-cards .card .card-content p{
+    font-size: small;
+    margin-top: 0;
+    color: #08060c77;
+}
+.project-cards .card .card-content h3{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.project-cards .card  .progress-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;   
+    color: #50417ca2;
+    font-size: small;
     
+}
+
+.additional-content {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  width: 100%;
+  margin: 0 10px;
+
+  
+}
+
+.additional-content .announcements {
+  padding: 5px;
+}
+.additional-content .announcements h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.additional-content .announcements .announcement-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+.additional-content .announcement-card div {
+  border-top: 1px solid #8066a539;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.additional-content .announcement-card p {
+  font-size: small;
+    margin-top: 0;
+    color: #08060c77;
+}
+
+.additional-content .announcement-card h3{
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.additional-content .trending {
+  padding: 5px;
+}
+
+.additional-content .trending .trending-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.additional-content .trending h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+
+.trending .trending-card div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.trending .trending-card div p{
+    font-size: small;
+    margin-top: 10px;
+    color: #08060c9a;
+}
+
+.trending .trending-card div img{
+     width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
