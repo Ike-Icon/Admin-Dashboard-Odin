@@ -1,11 +1,12 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #4a4646de;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
 }
 
 .sidebar {
@@ -48,14 +49,14 @@ body{
 
 
 
-.header {
+/* .header {
     background-color: #4a4646de;
     color: #fff;
     padding: 15px;
     text-align: center;
     width: 100%;
 
-}
+} */
 
 .content {
     flex: 1;
@@ -66,7 +67,9 @@ body{
     background-color: #4a4646de;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    color: #fff;
+    /* width: 100%; */
+    padding: 20px;
 }
 
 .content .header .user-input {
@@ -76,9 +79,91 @@ body{
     width: 100%;
 }
 
+.content .header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+}
+
+.content .header .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.content .header .user-input .search-bar input {
+    /* display: flex;
+    align-items: center; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 5px;
+    width: 400px;
+}
+
+.content .header .user-input .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;    
+    color: #fff;
+}
+
 .content .header .welcome-message {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 10px ;
+    margin-top: 20px;
+}
+.content .header .welcome-message .welcome-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+.greeting h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+}
+.greeting p {
+    font-size:x-small;
+    margin: 0;
+    color: #fff;
+    
+}
+.content .header .welcome-message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.content .header .welcome-message button:hover {
+    background-color: #fff;
+    color: #4164edde;
+    transition: 0.3s ease-in-out;
+}
+.content .header .welcome-actions {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+.content .header .welcome-message button {
+    background-color: #4164edde;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    
 }
