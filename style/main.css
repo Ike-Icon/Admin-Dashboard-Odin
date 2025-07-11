@@ -67,7 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #000;
-  padding: 20px;
+  padding: 10px 50px;
 }
 
 .content .header .user-input {
